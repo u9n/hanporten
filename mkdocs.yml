@@ -5,12 +5,13 @@ site_author: 'Henrik Palmlund Wahlgren @ Utilitarian'
 
 nav:
   - Hem: index.md
+  - Porten: port.md
+  - Protokollet: protocol.md
 
 
 theme:
   name: material
-  icon:
-    logo: material/cable-data
+  logo: images/han-port-white.svg
   palette:
     scheme: preference
     primary: green
@@ -25,6 +26,7 @@ repo_name: u9n/hanporten
 
 markdown_extensions:
   - pymdownx.highlight
+  - pymdownx.tabbed
   - pymdownx.superfences
   - admonition
   - codehilite:
