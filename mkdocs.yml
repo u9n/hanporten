@@ -12,6 +12,7 @@ nav:
 theme:
   name: material
   logo: images/han-port-white.svg
+  favicon: images/favicon.ico
   palette:
     scheme: preference
     primary: green
