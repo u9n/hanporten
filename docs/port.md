@@ -25,12 +25,12 @@ Det är möjligt att spänningsmata din utrustning direkt från HAN-porten. Den 
 
 Pin | Namn | Beskrivning | Kommentar
 --- | --- | --- | ---
-1 | +5V | +5V spänningsmatning | Kan användas för att driva utrustning
-2 | Data Request | +5V på denna startar export av data | Om man alltid vill att utrustningen skall skicka data så bygla över +5V till denna
-3 | Data Ground | Jord data | 
+1 | VCC | +5V spänningsmatning | Kan användas för att driva utrustning
+2 | DATA REQUEST | +5V på denna startar export av data | Om man alltid vill att utrustningen skall skicka data så bygla över +5V till denna
+3 | DATA GND | Jord data | 
 4 | NC | Inte ansluten | Används inte 
-5 | Data | Data line | Output, öppen kollektor
-6 | Power GND | Jord spänningsmätning | 
+5 | DATA OUT | Data output | Öppen kollektor
+6 | GND | Jord spänningsmatning | 
 
 ## Koppla in extra utrustning
 
