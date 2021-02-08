@@ -55,9 +55,9 @@ teckenformatet vara `8N1` (8 databits, ingen paritet, en stop bit). Standard IEC
 
 ## Timing
 
-När HAN-porten får +5V på `Data Request` börjar den skicka data på `Data line`.
+När HAN-porten får +5V på `DATA REQUEST` börjar den skicka data på `DATA OUT`.
 
-Data skickas var 10e sekund.
+Data skickas var 10:e sekund.
 
 Porten är enkelriktad så det är inte möjligt att skicka någon data till mätaren, 
 vilket gör det enkelt endast lyssna efter data.
@@ -79,7 +79,7 @@ programspråk.
    
 2. Sedan kommer en tom rad som visar att datan börjar.
 
-3. Ett flertal data rader. Se mer under [Datarader](protocol.md#datarader)
+3. Ett flertal datarader. Se mer under [Datarader](protocol.md#datarader)
 
 4. Sista raden som börjar med `!` som visar att data delen är slut och sedan 2 byts CRC för meddelandet.
    CRC:n (Cyclic Redundancy Check) används för att verifiera att man mottagit meddelandet på ett korrekt sätt.
@@ -99,7 +99,7 @@ En datarad har formatet:
 
 ### OBIS
 
-OBIS (OBject Identifier System) är en del av DLMS/COSEM och visar vilket värde dataraden gäller
+OBIS (OBject Identifier System) är en del av DLMS/COSEM och visar vilket värde dataraden gäller.
 
 Formatet är `A-B:C.D.E.F`       (ex: 1-0:1.8.0.255)
 
@@ -126,11 +126,12 @@ F | Faktureringsperiod eller historisk data.
 Värde och enhet är avdelat med `*`. Vissa värden har ingen enhet (till exempel tid och datum)
 och då finns där inget * inom parenteserna.
 
+
 ## Svenska branschrekommendationer
 
 Energiföretagen har tagit fram en 
 [branschrekommendation](https://www.energiforetagen.se/forlag/elnat/branschrekommendation-for-lokalt-kundgranssnitt-for-elmatare/) 
-om hur HAN porten borde fungera och vilken data som bör publiceras på HAN-porten.
+om hur HAN-porten borde fungera och vilken data som bör publiceras på HAN-porten.
 
 !!! note "Lite förtydlingar"
 
