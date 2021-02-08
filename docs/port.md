@@ -17,7 +17,7 @@ kontaktar du ditt elnätsbolag som skall aktivera den utan någon extra kostnad 
 
 Det är möjligt att spänningsmata din utrustning direkt från HAN-porten. Den levererar 
 +5 V på en pinne som kan användas för att driva externa utrustning. Du kan som max dra 
-100 mA från porten.
+250 mA från porten.
 
 ## PIN-layout
 
