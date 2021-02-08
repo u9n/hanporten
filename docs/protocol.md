@@ -81,7 +81,7 @@ programspråk.
 
 3. Ett flertal datarader. Se mer under [Datarader](protocol.md#datarader)
 
-4. Sista raden som börjar med `!` som visar att data delen är slut och sedan 2 byts CRC för meddelandet.
+4. Sista raden som börjar med `!` som visar att data delen är slut och sedan 2 bytes CRC för meddelandet.
    CRC:n (Cyclic Redundancy Check) används för att verifiera att man mottagit meddelandet på ett korrekt sätt.
    Datan som skall användas i beräkningen är de byte som är mellan `/` och `!`.
    
