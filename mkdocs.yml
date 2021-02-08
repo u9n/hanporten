@@ -1,6 +1,6 @@
 site_name: HANporten.se
 
-site_description: 'An information page about the local customer interface in Swedish electricity meters. Also called the HAN port or P1 port'
+site_description: 'En informationssida om det lokala kundgränssnitt som ska finnas på nya svenska elmätare. Kallas också HAN-porten, P1-porten eller H1-porten'
 site_author: 'Henrik Palmlund Wahlgren @ Utilitarian'
 
 nav:
