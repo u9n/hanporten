@@ -7,6 +7,7 @@ nav:
   - Hem: index.md
   - Porten: port.md
   - Protokollet: protocol.md
+  - Kretsscheman: electrical.md
 
 
 theme:
@@ -23,6 +24,8 @@ copyright: '<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.
 
 repo_url: https://github.com/u9n/hanporten
 repo_name: u9n/hanporten
+
+edit_uri: edit/main/docs/
 
 
 markdown_extensions:

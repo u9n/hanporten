@@ -134,13 +134,14 @@ Energiföretagen har tagit fram en
 om hur HAN-porten borde fungera och vilken data som bör publiceras på HAN-porten.
 
 !!! note "Lite förtydlingar"
+   
+      Med uttag menas uttag från elnätet. Det vill säga det du förbrukar. Med inmating 
+      menas det du matar in i elnätet (till exampel om du har solceller)
 
-    Med uttag menas uttag från elnätet. Det vill säga det du förbrukar. Men inmating 
-    menas det du matar in i elnätet (till exampel om du har solceller)
+      Den sista delen i OBIS har tagits bort då den inte tillför någon information.
 
-    Den sista delen i OBIS har tagits bort då den inte tillför någon information.
-
-    Tiden som visas är i svensk normaltid (UTC+1). Elmätare i Sverige ändrar inte om för sommartid. X anger om det är sommartid eller ej och kan ignoreras.
+      Tiden som visas är i svensk normaltid (UTC+1). Elmätare i Sverige ändrar inte om 
+      för sommartid. X anger om det är sommartid eller ej och kan ignoreras.
 
 OBIS | Beskrivning | Kommentar
 --- | --- | ---
