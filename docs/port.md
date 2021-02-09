@@ -5,12 +5,12 @@ består av ett RJ12 uttag, samma som på fasta telefoner.
 
 !!! warning
     Om din mätare istället har ett RJ45 uttag (internet-sladd) så har din mätare en 
-    HAN-port av den norska standarden. Koppla inte in någon utrustning i för den 
-    svenska standarden då det riskerar att ha sönder utrustningen.
+    HAN-port av den norska standarden. Koppla inte in någon utrustning för den 
+    svenska standarden i denna port (RJ12 passar i RJ45) då det riskerar att ha sönder utrustningen.
 
 ## Aktivera din port
 
-Standarden i Sverige är att HAN-porten är inaktiverad på standard. För att aktivera den
+Standarden i Sverige är att HAN-porten är inaktiverad som standard. För att aktivera den
 kontaktar du ditt elnätsbolag som skall aktivera den utan någon extra kostnad för dig.
 
 ## Spänningsmatning av utrustning

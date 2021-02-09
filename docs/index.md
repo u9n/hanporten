@@ -7,7 +7,7 @@ vara helt utbytta tills 2025.
 Det lokala kundgränssnittet kallas bland annat HAN-porten (Home Area Network), 
 P1-porten eller H1-porten.
 
-På denna sidan samlat information om hur HAN-porten fungerar, information om protokollet
+På denna sidan samlas information om hur HAN-porten fungerar, information om protokollet
 samt exempelkod på hur man kan tolka data som mätaren skickar.
 
 ## Ditt elnätsbolag kan aktivera porten
