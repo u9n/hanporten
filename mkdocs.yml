@@ -8,6 +8,8 @@ nav:
   - Porten: port.md
   - Protokollet: protocol.md
   - Kretsscheman: electrical.md
+  - Elnätsbolag: dsos.md
+  - Mätare: meters.md
 
 
 theme:
