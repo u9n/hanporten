@@ -3,7 +3,7 @@
 HAN-porten, eller P1-porten, sitter oftast under ett litet lock på din elmätare. Den 
 består av ett RJ12 uttag, samma som på fasta telefoner.
 
-!!! warning
+!!! warning "Varning!"
     Om din mätare istället har ett RJ45 uttag (internet-sladd) så har din mätare en 
     HAN-port av den norska standarden. Koppla inte in någon utrustning för den 
     svenska standarden i denna port (RJ12 passar i RJ45) då det riskerar att ha sönder utrustningen.
