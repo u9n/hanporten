@@ -2,23 +2,20 @@
 
 Här samlar vi information om kretsar för att få ut signalen korrekt från HAN-porten.
 
-!!! todo "Verifiera kretsarna"
+För att koppla in datasignalen enkelt i, till exempel, en Arduino eller Raspberry Pi
+behöves signalen inverteras. 
 
-    Vi har inte haft tid att verifiera några kretsar innan vi lade upp denna sida. 
+Nedan är en enkel inverter-krets baserat på en PNP-transistor
+
+![PNP inverter krets](images/p1_pnp_inverter_schematic.png)
+
+!!! note "OBS!"
+    Denna krets är inget vi rekommenderar i en produkt, men duger bra om man vill 
+    koppla upp något snabbt.
+    Vi på Utilitarian är inga hårdvaruexperter och kan inte ge rekommendationer på hur 
+    hårdvarudesign för en produktionsfärdig lösning. Men vi kan hjälpa till med 
+    protokollimplementationen om det behövs.
     
-    Men det är på gång. Vi kommer inte leverera "produktfärdiga" referensdesigner utan 
-    mer enkla sätt att få igång en enkel lösning för hemmabruk.
-
-    Om det finns någon som har bättre erfarenhet i hårdvaruutveckling tar vi gärna emot
-    bidrag till sidan. Vore väldigt nice med en lösning byggd med en Open Hardware 
-    licens.
-
-    Dataporten är open collector och man kan behöva invertera signalen.
-
-## Länkar
-
-Här är några länkar till möjliga kretsscheman.
-
-* [https://www.hackster.io/voske65/p1-energy-hub-f88865](https://www.hackster.io/voske65/p1-energy-hub-f88865)
-* [http://domoticx.com/p1-poort-slimme-meter-uitlezen-hardware/](http://domoticx.com/p1-poort-slimme-meter-uitlezen-hardware/)
-* [http://12volt.kloppenburgweb.nl/p1-uitlezen-met-arduino/](http://12volt.kloppenburgweb.nl/p1-uitlezen-met-arduino/)
+    Om det finns någon med bättre hårdvarukunskaper än oss som vill dela med sig av en 
+    bättre design lägger vi gärna upp det på denna sidan. Helst under en Open Hardware 
+    licens. 
