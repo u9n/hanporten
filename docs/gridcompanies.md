@@ -10,3 +10,13 @@ För att aktivera HAN-porten måste du ta kontakt med deras [kundtjänst](https:
 I E.ONs nät finns mätarna:
 
 * [Landis & Gyr E360](meters.md#landis--gyr-e360)
+
+## Ellevio
+
+Du kan aktivera HAN-porten på [Mina Sidor](https://www.ellevio.se/privat/mina-sidor/) 
+som privatperson eller på [Energikontot](https://www.ellevio.se/privat/mina-sidor/) 
+som företagskund.
+
+I Ellevios nät finns mätarna:
+
+* [Sagemcom S211](meters.md#sagemcom-s211)
