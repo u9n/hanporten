@@ -7,6 +7,9 @@ Instruktioner på hur man aktiverar HAN-porten hos olika elnätsbolag.
 I dagsläget har E.ON ingen självbetjäning för aktivering av HAN-porten via `Mina Sidor`.
 För att aktivera HAN-porten måste du ta kontakt med deras [kundtjänst](https://www.eon.se/kundservice)
 
+Det ska också vara möjligt att lägga in ett ärende via deras chatt-bot. Man behöver 
+kundnummer/personnummer, adress och mätarnummer.
+
 I E.ONs nät finns mätarna:
 
 * [Landis & Gyr E360](meters.md#landis--gyr-e360)
