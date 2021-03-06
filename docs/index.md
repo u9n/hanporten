@@ -37,7 +37,7 @@ experter inom energimätning, mätvärdesinsamling och hantering av energidata.
 
 Denna sida hostas på [Github](https://github.com/u9n/hanporten/). Om du har önskemål 
 om innehåll, tips eller ser något som är fel får du gärna öppna 
-ett [issue](https://github.com/u9n/hanporten/issues).
+ett [issue](https://github.com/u9n/hanporten/issues). Gillar ni sidan så får ni gärna ge repot en stjärna på Github.
 
 Innehållet på denna sida är licensierat under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
 
