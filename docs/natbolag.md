@@ -1,6 +1,11 @@
+---
+hide:
+    - navigation # Hide navigation
+---
+
 # Elnätsbolag
 
-Instruktioner på hur man aktiverar HAN-porten hos olika elnätsbolag. 
+Information om hur man aktiverar HAN-porten hos olika elnätsbolag. 
 
 ## E.ON
 
@@ -12,7 +17,7 @@ kundnummer/personnummer, adress och mätarnummer.
 
 I E.ONs nät finns mätarna:
 
-* [Landis & Gyr E360](meters.md#landis--gyr-e360)
+* [Landis & Gyr E360](matare.md#landis--gyr-e360)
 
 ## Ellevio
 
@@ -22,4 +27,4 @@ som företagskund.
 
 I Ellevios nät finns mätarna:
 
-* [Sagemcom S211](meters.md#sagemcom-s211)
+* [Sagemcom S211](matare.md#sagemcom-s211)
