@@ -1,17 +1,7 @@
-# Om HAN-porten
+# Svenska porten
 
 HAN-porten, eller P1-porten, sitter oftast under ett litet lock på din elmätare. Den 
-består av ett RJ12 uttag, samma som på fasta telefoner.
-
-!!! warning "Varning!"
-    Om din mätare istället har ett RJ45 uttag (internet-sladd) så har din mätare en 
-    HAN-port av den norska standarden. Koppla inte in någon utrustning för den 
-    svenska standarden i denna port (RJ12 passar i RJ45) då det riskerar att ha sönder utrustningen.
-
-## Aktivera din port
-
-Standarden i Sverige är att HAN-porten är inaktiverad som standard. För att aktivera den
-kontaktar du ditt elnätsbolag som skall aktivera den utan någon extra kostnad för dig.
+består av ett RJ12 uttag.
 
 ## Spänningsmatning av utrustning
 
@@ -19,9 +9,15 @@ Det är möjligt att spänningsmata din utrustning direkt från HAN-porten. Den 
 +5 V på en pinne som kan användas för att driva extern utrustning. Du kan dra max 
 250 mA från porten.
 
+!!! note "Hör med ditt nätbolag"
+    Enligt rekommendationerna är det inte ett krav att leverera en HAN-port med 
+    spänningsmatning från mätarna. Så det är möjligt att den mätare ditt elbolag köpt 
+    in inte kan spänningsmata utrustningen. Men de största bolagen levererar port med 
+    spänningsmatning. 
+
 ## PIN-layout
 
-![HAN-port med PIN layout](images/han-port-with-numbers.svg)
+![HAN-port med PIN layout](../images/han-port-with-numbers.svg)
 
 Pin | Namn | Beskrivning | Kommentar
 --- | --- | --- | ---
