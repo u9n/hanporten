@@ -18,7 +18,7 @@ kundnummer/personnummer, adress och mätarnummer.
 I E.ONs nät finns mätarna:
 
 * [Landis & Gyr E360](matare.md#landis--gyr-e360)
-* <a href="matare.md#iskra-am550">Iskra AM550</a>
+* [Iskra AM550](matare.md#iskra-am550)
 
 ## Ellevio
 
