@@ -16,7 +16,7 @@ HAN-porten på Landis & Gyr E360 sitter under luckan.
 
 ## Iskra AM550
 
-HAN-porten är märkt med P1 och sitter uppe i högra hörnet på mätaren. E.ON kan ej aktivera HAN-porten då det enligt egen utsago krockar med deras möjlighet till fjärravläsning. 
+HAN-porten är märkt med P1 och sitter uppe i högra hörnet på mätaren. E.ON kan ej aktivera HAN-porten på denna modell.
 
 ## Sagemcom S211
 
