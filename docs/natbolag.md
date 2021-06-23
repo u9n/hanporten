@@ -37,27 +37,11 @@ Information om hur man aktiverar HAN-porten hos olika elnätsbolag.
         <td>-</td>    
     </tr>
     <tr>
-        <td>Ellevio</td>    
-        <td>[Sagemcom](matare.md#sagemcom-s211)</td>    
-        <td>RJ12 </td>    
-        <td>Själv via deras hemsida https://www.ellevio.se/privat/mina-sidor/</td>    
-        <td>https://www.ellevio.se/privat/anslutningar/elanlaggning/sa-fungerar-din-elmatare/</td>    
+        <td>Sandviken Energi</td>    
+        <td>[Kamstrup](matare.md#KamstrupOmnipower)</td>    
+        <td>RJ45</td>    
+        <td>Kontakta kundtjänst</td>    
+        <td>https://sandvikenenergi.se/elnat/dinelmatare.186.html</td>     
     </tr>
 </tbody>
 </table>
-    
-
-## 
-
-Elmätare: <br>
-Fysiskt gränssnitt: -<br>
-Aktivering: <br>
-Företagslänk: -<br>
-
-## Sandviken Energi AB
-
-Elmätare: [Kamstrup](matare.md#KamstrupOmnipower)<br>
-Fysiskt gränssnitt: RJ45<br>
-Aktivering: Kontakta kundtjänst<br>
-Företagslänk: https://sandvikenenergi.se/elnat/dinelmatare.186.html<br>
-
