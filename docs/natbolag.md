@@ -4,27 +4,60 @@ hide:
 ---
 
 # Elnätsbolag
-
 Information om hur man aktiverar HAN-porten hos olika elnätsbolag. 
 
-## E.ON
+<table>
+<thead>
+    <th>Elbolag</th>
+    <th>Elmätare</th>
+    <th>Fysiskt gränssnitt</th>
+    <th>Aktivering</th>
+    <th>Företagslänk</th>
+    </thead>
+<tbody>
+    <tr>
+        <td>E.ON</td>    
+        <td>[Landis & Gyr E360](matare.md#landis--gyr-e360)</td>    
+        <td>RJ12 </td>    
+        <td>Kontakta kundtjänst</td>    
+        <td>https://www.eon.se/el/elnat/sa-fungerar-din-smarta-elmatare</td>    
+    </tr>
+    <tr>
+        <td>Ellevio</td>    
+        <td>[Sagemcom](matare.md#sagemcom-s211)</td>    
+        <td>RJ12 </td>    
+        <td>Själv via deras hemsida https://www.ellevio.se/privat/mina-sidor/</td>    
+        <td>https://www.ellevio.se/privat/anslutningar/elanlaggning/sa-fungerar-din-elmatare/</td>    
+    </tr>
+    <tr>
+        <td>Gävle Energi</td>    
+        <td>[Kamstrup](matare.md#KamstrupOmnipower)</td>    
+        <td>-</td>    
+        <td>Kontakta kundtjänst</td>    
+        <td>-</td>    
+    </tr>
+    <tr>
+        <td>Ellevio</td>    
+        <td>[Sagemcom](matare.md#sagemcom-s211)</td>    
+        <td>RJ12 </td>    
+        <td>Själv via deras hemsida https://www.ellevio.se/privat/mina-sidor/</td>    
+        <td>https://www.ellevio.se/privat/anslutningar/elanlaggning/sa-fungerar-din-elmatare/</td>    
+    </tr>
+</tbody>
+</table>
+    
 
-I dagsläget har E.ON ingen självbetjäning för aktivering av HAN-porten via `Mina Sidor`.
-För att aktivera HAN-porten måste du ta kontakt med deras [kundtjänst](https://www.eon.se/kundservice)
+## 
 
-Det ska också vara möjligt att lägga in ett ärende via deras chatt-bot. Man behöver 
-kundnummer/personnummer, adress och mätarnummer.
+Elmätare: <br>
+Fysiskt gränssnitt: -<br>
+Aktivering: <br>
+Företagslänk: -<br>
 
-I E.ONs nät finns mätarna:
+## Sandviken Energi AB
 
-* [Landis & Gyr E360](matare.md#landis--gyr-e360)
+Elmätare: [Kamstrup](matare.md#KamstrupOmnipower)<br>
+Fysiskt gränssnitt: RJ45<br>
+Aktivering: Kontakta kundtjänst<br>
+Företagslänk: https://sandvikenenergi.se/elnat/dinelmatare.186.html<br>
 
-## Ellevio
-
-Du kan aktivera HAN-porten på [Mina Sidor](https://www.ellevio.se/privat/mina-sidor/) 
-som privatperson eller på [Energikontot](https://www.ellevio.se/privat/mina-sidor/) 
-som företagskund.
-
-I Ellevios nät finns mätarna:
-
-* [Sagemcom S211](matare.md#sagemcom-s211)
