@@ -25,8 +25,8 @@ HAN-porten sitter under luckan i nedre vänstra hörnet.
 
 
 ![Kamstrup Omnipower](images/kamstrupomnipower.png)
-
-Har en port för anslutning av olika moduler från Kamstrup som i sin tur erbjuder ett gränssnitt på RJ45, RJ12 eller tillochmed blåtand.
+![Kamstrup Han-modul](images/KamstrupHAN-modul.jpg)
+Har en port för anslutning av olika moduler från Kamstrup som i sin tur erbjuder gränssnitt som modul tillverkaren tillhandahåller, som tex RJ45, RJ12 eller tillochmed blåtand.
 
 https://www.hemab.se/download/18.7f1416de15b1a8619146261d/1490878150634/OMNIPOWER+3-phase+-+Data+Sheet+-+Svenska.pdf
 
