@@ -18,6 +18,7 @@ kundnummer/personnummer, adress och mätarnummer.
 I E.ONs nät finns mätarna:
 
 * [Landis & Gyr E360](matare.md#landis--gyr-e360)
+* [Iskra AM550](matare.md#iskra-am550)  (E.ON aktiverar inte HAN-porten på denna mätartyp)
 
 ## Ellevio
 
