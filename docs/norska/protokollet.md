@@ -49,60 +49,48 @@ fortsätter man läsa tills nästa frame-end.
 ## Parsa data
 
 ```python
-from dlms_cosem.prtocol import xdlms
+from dlms_cosem.protocol import xdlms
 from dlms_cosem.hdlc import frames
 from dlms_cosem.utils import parse_as_dlms_data
-
-hdlc_data = b"\x7e.....\x7e"
-ui = frames.UnnumberdInformationFrame(hdlc_data)
-dn = xdlms.DataNotification.from_bytes(ui.payload[3:])  # The first 3 bytes should be ignored.
-result = parse_as_dlms_data(dn.body)
-
-
->>>[
-     [bytearray(b'\x00\x00\x01\x00\x00\xff'),bytearray(b'\x07\xe3\x0c\x10\x01\x07;(\xff\x80\x00\xff')],  # Datum
-     [bytearray(b'\x01\x00\x01\x07\x00\xff'), 1122, [0, 27]],  # OBIS, value, [skalär, enhet]
-     [bytearray(b'\x01\x00\x02\x07\x00\xff'), 0, [0, 27]],
-     [bytearray(b'\x01\x00\x03\x07\x00\xff'), 1507, [0, 29]],
-     [bytearray(b'\x01\x00\x04\x07\x00\xff'), 0, [0, 29]],
-     [bytearray(b'\x01\x00\x1f\x07\x00\xff'), 0, [-1, 33]],
-     [bytearray(b'\x01\x003\x07\x00\xff'), 75, [-1, 33]],
-     [bytearray(b'\x01\x00G\x07\x00\xff'), 0, [-1, 33]],
-     [bytearray(b'\x01\x00 \x07\x00\xff'), 2307, [-1, 35]],
-     [bytearray(b'\x01\x004\x07\x00\xff'), 2499, [-1, 35]],
-     [bytearray(b'\x01\x00H\x07\x00\xff'), 2308, [-1, 35]],
-     [bytearray(b'\x01\x00\x15\x07\x00\xff'), 0, [0, 27]],
-     [bytearray(b'\x01\x00\x16\x07\x00\xff'), 0, [0, 27]],
-     [bytearray(b'\x01\x00\x17\x07\x00\xff'), 0, [0, 29]],
-     [bytearray(b'\x01\x00\x18\x07\x00\xff'), 0, [0, 29]],
-     [bytearray(b'\x01\x00)\x07\x00\xff'), 1122, [0, 27]],
-     [bytearray(b'\x01\x00*\x07\x00\xff'), 0, [0, 27]],
-     [bytearray(b'\x01\x00+\x07\x00\xff'), 1506, [0, 29]],
-     [bytearray(b'\x01\x00,\x07\x00\xff'), 0, [0, 29]],
-     [bytearray(b'\x01\x00=\x07\x00\xff'), 0, [0, 27]],
-     [bytearray(b'\x01\x00>\x07\x00\xff'), 0, [0, 27]],
-     [bytearray(b'\x01\x00?\x07\x00\xff'), 0, [0, 29]],
-     [bytearray(b'\x01\x00@\x07\x00\xff'), 0, [0, 29]],
-     [bytearray(b'\x01\x00\x01\x08\x00\xff'), 10049926, [0, 30]],
-     [bytearray(b'\x01\x00\x02\x08\x00\xff'), 8, [0, 30]],
-     [bytearray(b'\x01\x00\x03\x08\x00\xff'), 6614347, [0, 32]],
-     [bytearray(b'\x01\x00\x04\x08\x00\xff'), 5, [0, 32]]]
-
-# Obis could be parsed like:
 from dlms_cosem.cosem import Obis
-
-obis = Obis.from_bytes(obis_bytes)
-
-# The datetime can be parsed like:
 from dlms_cosem.time import datetime_from_bytes
 
-datetime, clock_status = datetime_from_bytes(time_bytes)
+# 3-phase
+hdlc_data_hex = (
+    "7ea2434108831385ebe6e7000f4000000000011b020209060000010000ff090c07e30c1001073b28ff"
+    "8000ff020309060100010700ff060000046202020f00161b020309060100020700ff06000000000202"
+    "0f00161b020309060100030700ff06000005e302020f00161d020309060100040700ff060000000002"
+    "020f00161d0203090601001f0700ff10000002020fff1621020309060100330700ff10004b02020fff"
+    "1621020309060100470700ff10000002020fff1621020309060100200700ff12090302020fff162302"
+    "0309060100340700ff1209c302020fff1623020309060100480700ff12090402020fff162302030906"
+    "0100150700ff060000000002020f00161b020309060100160700ff060000000002020f00161b020309"
+    "060100170700ff060000000002020f00161d020309060100180700ff060000000002020f00161d0203"
+    "09060100290700ff060000046202020f00161b0203090601002a0700ff060000000002020f00161b02"
+    "03090601002b0700ff06000005e202020f00161d0203090601002c0700ff060000000002020f00161d"
+    "0203090601003d0700ff060000000002020f00161b0203090601003e0700ff060000000002020f0016"
+    "1b0203090601003f0700ff060000000002020f00161d020309060100400700ff060000000002020f00"
+    "161d020309060100010800ff060099598602020f00161e020309060100020800ff060000000802020f"
+    "00161e020309060100030800ff060064ed4b02020f001620020309060100040800ff06000000050202"
+    "0f001620be407e"
+)
 
-# Ex:
-datetime_from_bytes(b'\x07\xe3\x0c\x10\x01\x07;(\xff\x80\x00\xff')
->>>(datetime.datetime(2019, 12, 16, 7, 59, 40), ClockStatus(invalid=True, doubtful=True, different_base=True, invalid_status=True, daylight_saving_active=True))
+ui = frames.UnnumberedInformationFrame.from_bytes(bytes.fromhex(hdlc_data_hex))
+dn = xdlms.DataNotification.from_bytes(
+    ui.payload[3:]
+)  # The first 3 bytes should be ignored.
+result = parse_as_dlms_data(dn.body)
 
-# The unit enums are not added in the DLMS library yet. (on roadmap)
+# First is date
+date_row = result.pop(0)
+clock_obis = Obis.from_bytes(date_row[0])
+clock, stats = datetime_from_bytes(date_row[1])
+print(f"Clock object: {clock_obis.to_string()}, datetime={clock}")
+
+# rest is data
+for item in result:
+    obis = Obis.from_bytes(item[0])
+    value = item[1]
+    print(f"{obis.to_string()}={value}")
 
 ```
 ## Timing
