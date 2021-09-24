@@ -29,3 +29,9 @@ som företagskund.
 I Ellevios nät finns mätarna:
 
 * [Sagemcom S211](matare.md#sagemcom-s211)
+
+## Nacka Energi
+
+* [Kaifa](matare.md#kaifa)
+
+
