@@ -29,3 +29,12 @@ som företagskund.
 I Ellevios nät finns mätarna:
 
 * [Sagemcom S211](matare.md#sagemcom-s211)
+
+## Mälarenergi
+
+I dagsläget har Mälarenergi ingen självbetjäning för aktivering av HAN-porten.
+För att aktivera HAN-porten måste du ta kontakt med deras [kundtjänst](https://www.malarenergi.se/kundcenter-privat/)
+
+I Mälarenergis nät finns mätarna:
+
+* [Kaifa MA304H4PSE](matare.md#kaifa-ma304h4pse)

@@ -24,3 +24,6 @@ HAN-porten är märkt med P1 och sitter uppe i högra hörnet på mätaren. E.ON
 
 HAN-porten sitter under luckan i nedre vänstra hörnet.
 
+## Kaifa MA304H4PSE
+
+HAN-porten som är av den norska standarden (RJ45) sitter under en gummilucka till vänster på mätarens framsida.
