@@ -26,4 +26,4 @@ HAN-porten sitter under luckan i nedre vänstra hörnet.
 
 ## Kaifa MA304H4PSE
 
-HAN-porten sitter under en gummilucka i övre vänstra hörnet.
+HAN-porten som är av den norska standarden (RJ45) sitter under en gummilucka till vänster på mätarens framsida.
