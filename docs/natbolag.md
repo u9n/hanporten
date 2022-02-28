@@ -62,3 +62,18 @@ Man aktiverar porten genom att fylla i ett webbformulär här: [https://www.seva
 I SEVABs elnät finns mätarna:
 
 * [Aidon 6534](matare.md#aidon-6534) 
+
+## Tekniska Verken
+
+Man aktiverar porten genom att beställa det via Tekniska verkens kundsidor: [https://www.tekniskaverken.se/mina-sidor/bestallaboka/](https://www.tekniskaverken.se/mina-sidor/bestallaboka/).
+
+I Tekniska verkens när finns mätarna:
+
+* [Aidon 6534](matare.md#aidon-6534)
+* Aidon 6511
+* Aidon 6560
+* Aidon 6550
+
+!!! warning "OBS: Kontrollera din mätare"
+    Tekniska verken rullade ut mätare tidigt och har en mix av norska (RJ45) och svenska (RJ12) standarden.
+    Det finns också en version där det elektriska interfacet är svenskt (RJ12) men datan som skickas är enligt den norska standarden.
