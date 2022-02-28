@@ -7,6 +7,12 @@ hide:
 
 En samling av de mätare som används i Sverige och vart HAN-porten sitter på dem.
 
+## Aidon 6534 
+
+![Aidion 6534 front](images/aidon-6534.jpeg)
+
+HAN-porten sitter på högra sidan över terminalluckan.
+
 ## Landis & Gyr E360
 
 ![Landis & Gyr E360 front](images/LG_E360_1.png)

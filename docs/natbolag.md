@@ -1,4 +1,4 @@
-g---
+---
 hide:
     - navigation # Hide navigation
 ---
@@ -30,6 +30,15 @@ I Ellevios nät finns mätarna:
 
 * [Sagemcom S211](matare.md#sagemcom-s211)
 
+
+## Eskilstuna Energi och Miljö 
+
+Man aktiverar porten genom att fylla i ett webbformulär här: [https://www.eem.se/privat/elnat/elmatare/han-porten/](http://www.eem.se/privat/elnat/elmatare/han-porten/)
+
+I Eskilstuna Energi och Miljö elnät finns mätarna:
+
+* [Aidon 6534](matare.md#aidon-6534) 
+
 ## Mälarenergi
 
 I dagsläget har Mälarenergi ingen självbetjäning för aktivering av HAN-porten.
@@ -44,3 +53,12 @@ I Mälarenergis nät finns mätarna:
 I Nacka Energis nät finns mätarna:
 
 * [Kaifa MA304](matare.md#kaifa-ma304) (Med svensk HAN-port)
+
+
+## SEVAB Strängnäs Energi
+
+Man aktiverar porten genom att fylla i ett webbformulär här: [https://www.sevab.com/privat/elnat/elmatare/han-porten/](https://www.sevab.com/privat/elnat/elmatare/han-porten/)
+
+I SEVABs elnät finns mätarna:
+
+* [Aidon 6534](matare.md#aidon-6534) 
