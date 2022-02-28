@@ -1,4 +1,4 @@
----
+g---
 hide:
     - navigation # Hide navigation
 ---
@@ -37,4 +37,10 @@ För att aktivera HAN-porten måste du ta kontakt med deras [kundtjänst](https:
 
 I Mälarenergis nät finns mätarna:
 
-* [Kaifa MA304H4PSE](matare.md#kaifa-ma304h4pse)
+* [Kaifa MA304](matare.md#kaifa-ma304) (Med norsk HAN-port)
+
+## Nacka Energi
+
+I Nacka Energis nät finns mätarna:
+
+* [Kaifa MA304](matare.md#kaifa-ma304) (Med svensk HAN-port)
