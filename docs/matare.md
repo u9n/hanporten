@@ -24,9 +24,9 @@ HAN-porten på Landis & Gyr E360 sitter under luckan.
 
 HAN-porten är märkt med P1 och sitter uppe i högra hörnet på mätaren. E.ON kan ej aktivera HAN-porten på denna modell.
 
-## Sagemcom S211
+## Sagemcom S211/T211
 
-![Sagemcom S211](images/sagemcom_s211.png)
+![Sagemcom S211/T211](images/sagemcom_s211.png)
 
 HAN-porten sitter under luckan i nedre vänstra hörnet.
 
