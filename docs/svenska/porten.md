@@ -1,7 +1,8 @@
 # Svenska porten
 
 HAN-porten, eller P1-porten, sitter oftast under ett litet lock på din elmätare. Den 
-består av ett RJ12 uttag.
+består av ett RJ12 uttag. Den svenska porten är baserad på
+[DSMR P1 Companion Standard](https://www.netbeheernederland.nl/_upload/Files/Slimme_meter_15_a727fce1f1.pdf)
 
 ## Spänningsmatning av utrustning
 
