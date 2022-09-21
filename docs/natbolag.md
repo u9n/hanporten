@@ -24,6 +24,7 @@ som företagskund.
 I Ellevios nät finns mätarna:
 
 * [Sagemcom S211](matare.md#sagemcom-s211)
+* [Sagemcom T211](matare.md#sagemcom-t211)
 
 
 ## Eskilstuna Energi och Miljö 
