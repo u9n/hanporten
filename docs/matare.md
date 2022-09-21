@@ -30,6 +30,12 @@ HAN-porten är märkt med P1 och sitter uppe i högra hörnet på mätaren. E.ON
 
 HAN-porten sitter under luckan i nedre vänstra hörnet.
 
+## Sagemcom T211
+
+<img src="images/sagemcom_t211.png" alt="Sagemcom T211" width="200">
+
+HAN-porten sitter under luckan i nedre vänstra hörnet.
+
 ## Kaifa MA304
 
 HAN-porten sitter under en gummilucka till vänster på mätarens framsida. Det finns både versioner med den svenska och norska standarden ute hos olika elnätsbolag.
