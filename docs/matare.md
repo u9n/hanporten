@@ -33,3 +33,19 @@ HAN-porten sitter under luckan i nedre vänstra hörnet.
 ## Kaifa MA304
 
 HAN-porten sitter under en gummilucka till vänster på mätarens framsida. Det finns både versioner med den svenska och norska standarden ute hos olika elnätsbolag.
+
+
+## Kamstrup Omnipower
+
+
+![Kamstrup Omnipower](images/kamstrupomnipower.png)
+![Kamstrup Han-modul](images/KamstrupHAN-modul.jpg)
+<br>
+Kamstrup Har en flexibel lösning där mätaren har anslutning av olika moduler.<br>
+EN modul antingen direkt från Kamstrup eller andra tillverkare. <br>
+Dessa moduler erbjuder sen valfri anslutning, som tex RJ45, RJ12 eller tillochmed blåtand.
+
+https://www.hemab.se/download/18.7f1416de15b1a8619146261d/1490878150634/OMNIPOWER+3-phase+-+Data+Sheet+-+Svenska.pdf
+
+
+
