@@ -62,7 +62,7 @@ I SEVABs elnät finns mätarna:
 
 Man aktiverar porten genom att beställa det via Tekniska verkens kundsidor: [https://www.tekniskaverken.se/mina-sidor/bestallaboka/](https://www.tekniskaverken.se/mina-sidor/bestallaboka/).
 
-I Tekniska verkens när finns mätarna:
+I Tekniska verkens nät finns mätarna:
 
 * [Aidon 6534](matare.md#aidon-6534)
 * Aidon 6511
