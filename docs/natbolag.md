@@ -72,3 +72,14 @@ I Tekniska verkens nät finns mätarna:
 !!! warning "OBS: Kontrollera din mätare"
     Tekniska verken rullade ut mätare tidigt och har en mix av norska (RJ45) och svenska (RJ12) standarden.
     Det finns också en version där det elektriska interfacet är svenskt (RJ12) men datan som skickas är enligt den norska standarden.
+
+
+## Gävle Energi
+
+Man aktiverar porten genom att Logga in på Mina Sidor, och fyller i formuläret "Öppna kundgränssnitt" : [https://minasidor.gavleenergi.se/](https://minasidor.gavleenergi.se/)
+
+När utrullningen är klar, så har Gävle energi´s nät endast denna mätare:
+
+* [Kamstrup Omnipower](matare.md#Kamstrup-Omnipower)
+
+Dom Tillhandahåller _inte_ En Modul för att ansluta själva kabel, utan valfri modul måste köpas till.
