@@ -1,4 +1,7 @@
 ---
+layout: Elmätare
+title: "Elmätare"
+permalink: /matare
 hide:
     - navigation # Hide navigation
 ---
