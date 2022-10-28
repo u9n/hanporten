@@ -20,22 +20,6 @@ nav:
   - Elnätsbolag: natbolag.md
   - Mätare: matare.md
 
-
-theme:
-  name: material
-  logo: images/han-port-white.svg
-  favicon: images/favicon.ico
-  palette:
-    primary: green
-  language: sv
-  features:
-    #- navigation.instant
-    - navigation.tabs
-    - navigation.sections
-    - header.autohide
-
-extra_css:
-  - stylesheets/extra.css
   
 repo_url: https://github.com/deployHuman/smartamr
 repo_name: deployHuman/smartamr
