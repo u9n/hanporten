@@ -1,8 +1,3 @@
----
-hide:
-    - navigation # Hide navigation
----
-
 # Elnätsbolag
 
 Information om hur man aktiverar HAN-porten hos olika elnätsbolag. 

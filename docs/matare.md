@@ -1,11 +1,3 @@
----
-layout: Elmätare
-title: "Elmätare"
-permalink: /matare
-hide:
-    - navigation # Hide navigation
----
-
 # Mätare
 
 En samling av de mätare som används i Sverige och vart HAN-porten sitter på dem.
