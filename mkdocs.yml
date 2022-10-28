@@ -23,7 +23,6 @@ nav:
 
 theme:
   name: material
-  custom_dir: overrides
   logo: images/han-port-white.svg
   favicon: images/favicon.ico
   palette:
@@ -37,24 +36,7 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
-
-
-copyright: '<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="http://www.hanporten.se">hanporten.se</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.utilitarian.io">Utilitarian</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>'
-
+  
 repo_url: https://github.com/deployHuman/smartamr
 repo_name: deployHuman/smartamr
-
-edit_uri: edit/main/docs/
-
-
-markdown_extensions:
-  - pymdownx.highlight
-  - pymdownx.tabbed
-  - pymdownx.superfences
-  - admonition
-  - codehilite:
-      guess_lang: false
-  - toc:
-      permalink: '#'
-  - def_list
 
