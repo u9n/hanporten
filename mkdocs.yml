@@ -2,23 +2,29 @@ site_name: smartmätare.se
 
 site_description: 'En informationssida om smarta mätare och dess gränssnitt'
 site_author: 'DeployHuman@github'
-
+theme:
+  name: readthedocs
+  highlightjs: true
+  include_sidebar: true
+  hljs_languages:
+    - yaml
+    
 nav:
-  - Hem: index.md
+  - Hem: 'index.md'
   - Svenska porten (RJ12):
-    - Porten: svenska/porten.md
-    - Protokollet: svenska/protokollet.md
-    - Kretsscheman: svenska/kretsschema.md
-    - Avvikande implementationer: svenska/avvikelser.md
-    - Övriga resurser: svenska/övriga-resurser.md
-    - Lösningar: svenska/lösningar.md
+    - Porten: 'svenska/porten.md'
+    - Protokollet: 'svenska/protokollet.md'
+    - Kretsscheman: 'svenska/kretsschema.md'
+    - Avvikande implementationer: 'svenska/avvikelser.md'
+    - Övriga resurser: 'svenska/övriga-resurser.md'
+    - Lösningar: 'svenska/lösningar.md'
   - Norska porten (RJ45):
-    - Porten: norska/porten.md
-    - Protokollet: norska/protokollet.md
-    - Kretsscheman: norska/kretsschema.md
-    - Lösningar: norska/lösningar.md
-  - Elnätsbolag: natbolag.md
-  - Mätare: matare.md
+    - Porten: 'norska/porten.md'
+    - Protokollet: 'norska/protokollet.md'
+    - Kretsscheman: 'norska/kretsschema.md'
+    - Lösningar: 'norska/lösningar.md'
+  - Elnätsbolag: 'natbolag.md'
+  - Mätare: 'matare.md'
 
   
 repo_url: https://github.com/deployHuman/smartamr
