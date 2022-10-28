@@ -30,14 +30,9 @@ mätare med HAN-port innan dessa rekommendationer var fullt på plats. Därför 
 även elmätare med den [norska](norska/porten.md) varianten av HAN-port. Skillnaden är att den norska är 
 en RJ45 kontakt (vanlig internetsladd) och den [svenska](svenska/porten.md) är en RJ12 kontakt.
 
-## Om HANporten.se
+## Om [smartmatare.se](http://smartmatare.se/)
 
-[hanporten.se](https://hanporten.se) drivs av [Utilitarian](https://utilitarian.io), 
-experter inom energimätning, mätvärdesinsamling och hantering av energidata.
-
-Denna sida hostas på [Github](https://github.com/u9n/hanporten/). Om du har önskemål 
-om innehåll, tips eller ser något som är fel får du gärna öppna 
-ett [issue](https://github.com/u9n/hanporten/issues). Gillar ni sidan så får ni gärna ge repot en stjärna på Github.
+Denna sida hostas på [Github](https://github.com/deployHuman/smartamr). 
 
 Innehållet på denna sida är licensierat under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
 
