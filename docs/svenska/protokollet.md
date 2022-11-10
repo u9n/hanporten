@@ -177,35 +177,32 @@ om hur HAN-porten borde fungera och vilken data som bör publiceras på HAN-port
       Tiden som visas är i svensk normaltid (UTC+1). Elmätare i Sverige ändrar inte om 
       för sommartid. X anger om det är sommartid eller ej och kan ignoreras.
 
-OBIS | Beskrivning | Kommentar
---- | --- | ---
-0-0.1.0.0 | Datum och tid | Formatet `YYMMDDhhmmssX`. 
-1-0:1.8.0 | Mätarställning Aktiv Energi Uttag. | 
-1-0:2.8.0 | Mätarställning Aktiv Energi Inmatning |
-1-0:3.8.0 | Mätarställning Reaktiv Energi Uttag |
-1-0:4.8.0 | Mätarställning Reaktiv Energi Inmatning |
-1-0:1.7.0 | Aktiv Effekt Uttag | Momentan trefaseffekt
-1-0:2.7.0 | Aktiv Effekt Inmatning | Momentan trefaseffekt
-1-0:3.7.0 | Reaktiv Effekt Uttag | Momentan trefaseffekt
-1-0:4.7.0 | Reaktiv Effekt Inmatning | Momentan trefaseffekt
-1-0:21.7.0 | L1 Aktiv Effekt Uttag | Momentan effekt
-1-0:22.7.0 | L1 Aktiv Effekt Inmatning | Momentan effekt
-1-0:41.7.0 | L2 Aktiv Effekt Uttag | Momentan effekt
-1-0:42.7.0 | L2 Aktiv Effekt Inmatning | Momentan effekt
-1-0:61.7.0 | L3 Aktiv Effekt Uttag | Momentan effekt
-1-0:62.7.0 | L3 Aktiv Effekt Inmatning | Momentan effekt
-1-0:23.7.0 | L1 Reaktiv Effekt Uttag | Momentan effekt
-1-0:24.7.0 | L1 Reaktiv Effekt Inmatning | Momentan effekt
-1-0:43.7.0 | L2 Reaktiv Effekt Uttag | Momentan effekt
-1-0:44.7.0 | L2 Reaktiv Effekt Inmatning | Momentan effekt
-1-0:63.7.0 | L3 Reaktiv Effekt Uttag | Momentan effekt
-1-0:64.7.0 | L3 Reaktiv Effekt Inmatning | Momentan effekt
-1-0:32.7.0 | L1 Fasspänning | Momentant RMS-värde
-1-0:52.7.0 | L2 Fasspänning | Momentant RMS-värde
-1-0:72.7.0 | L3 Fasspänning | Momentant RMS-värde
-1-0:31.7.0 | L1 Fasström | Momentant RMS-värde
-1-0:51.7.0 | L2 Fasström | Momentant RMS-värde
-1-0:71.7.0 | L3 Fasström | Momentant RMS-värde
-
-
-
+OBIS | Beskrivning | Kommentar | Exempel-värde
+--- | --- | --- | ---
+0-0.1.0.0 | Datum och tid | Formatet `YYMMDDhhmmssX` | 210217184019W
+1-0:1.8.0 | Mätarställning Aktiv Energi Uttag |  | 00006678.394\*kWh
+1-0:2.8.0 | Mätarställning Aktiv Energi Inmatning | | 00000000.000\*kWh
+1-0:3.8.0 | Mätarställning Reaktiv Energi Uttag | | 00000021.988\*kvarh
+1-0:4.8.0 | Mätarställning Reaktiv Energi Inmatning | | 00001020.971\*kvarh
+1-0:1.7.0 | Aktiv Effekt Uttag | Momentan trefaseffekt | 0001.727\*kW
+1-0:2.7.0 | Aktiv Effekt Inmatning | Momentan trefaseffekt | 0000.000\*kW
+1-0:3.7.0 | Reaktiv Effekt Uttag | Momentan trefaseffekt | 0000.000\*kvar
+1-0:4.7.0 | Reaktiv Effekt Inmatning | Momentan trefaseffekt | 0000.309\*kvar
+1-0:21.7.0 | L1 Aktiv Effekt Uttag | Momentan effekt | 0001.023\*kW
+1-0:22.7.0 | L1 Aktiv Effekt Inmatning | Momentan effekt | 0000.350\*kW
+1-0:41.7.0 | L2 Aktiv Effekt Uttag | Momentan effekt | 0000.353\*kW
+1-0:42.7.0 | L2 Aktiv Effekt Inmatning | Momentan effekt | 0000.000\*kW
+1-0:61.7.0 | L3 Aktiv Effekt Uttag | Momentan effekt | 0000.000\*kW
+1-0:62.7.0 | L3 Aktiv Effekt Inmatning | Momentan effekt | 0000.000\*kW
+1-0:23.7.0 | L1 Reaktiv Effekt Uttag | Momentan effekt | 0000.000\*kvar
+1-0:24.7.0 | L1 Reaktiv Effekt Inmatning | Momentan effekt | 0000.000\*kvar
+1-0:43.7.0 | L2 Reaktiv Effekt Uttag | Momentan effekt | 0000.000\*kvar
+1-0:44.7.0 | L2 Reaktiv Effekt Inmatning | Momentan effekt | 0000.009\*kvar
+1-0:63.7.0 | L3 Reaktiv Effekt Uttag | Momentan effekt | 0000.161\*kvar
+1-0:64.7.0 | L3 Reaktiv Effekt Inmatning | Momentan effekt | 0000.138\*kvar
+1-0:32.7.0 | L1 Fasspänning | Momentant RMS-värde | 240.3\*V
+1-0:52.7.0 | L2 Fasspänning | Momentant RMS-värde | 240.1\*V
+1-0:72.7.0 | L3 Fasspänning | Momentant RMS-värde | 241.3\*V
+1-0:31.7.0 | L1 Fasström | Momentant RMS-värde | 004.2\*A
+1-0:51.7.0 | L2 Fasström | Momentant RMS-värde | 001.6\*A
+1-0:71.7.0 | L3 Fasström | Momentant RMS-värde | 001.7\*A
