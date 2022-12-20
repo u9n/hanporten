@@ -59,9 +59,17 @@ I SEVABs elnät finns mätarna:
 
 * [Aidon 6534](matare.md#aidon-6534) 
 
+## Skånska Energi
+
+Du begär aktivering av HAN-porten genom att maila kundtjänst: [https://www.skanska-energi.se/kontakta-oss/](https://www.skanska-energi.se/kontakta-oss/)
+
+I Skånska Energis nät finns mätarna:
+
+* [Sagemcom T211](matare.md#sagemcom-t211)
+
 ## Tekniska Verken
 
-Man aktiverar porten genom att beställa det via Tekniska verkens kundsidor: [https://www.tekniskaverken.se/mina-sidor/bestallaboka/](https://www.tekniskaverken.se/mina-sidor/bestallaboka/).
+Man aktiverar porten genom att beställa det via Tekniska verkens kundsidor: [https://www.tekniskaverken.se/mina-sidor/bestallaboka](https://www.tekniskaverken.se/mina-sidor/bestallaboka/)
 
 I Tekniska verkens när finns mätarna:
 
