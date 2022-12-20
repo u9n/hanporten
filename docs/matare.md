@@ -32,7 +32,7 @@ HAN-porten sitter under luckan i nedre vänstra hörnet.
 
 ## Sagemcom T211
 
-<img src="images/sagemcom_t211.png" alt="Sagemcom T211" width="200">
+![Sagemcom T211](images/sagemcom_t211.png)
 
 HAN-porten sitter under luckan i nedre vänstra hörnet.
 
