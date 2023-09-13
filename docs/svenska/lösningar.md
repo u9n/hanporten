@@ -15,6 +15,7 @@ merga in dina ändringar till sidan.
 
 * [https://amsleser.no/ - Färdiga moduler eller byggkit för HAN-porten](https://amsleser.no/) 
 * [https://www.homewizard.com/p1-meter/ - Dongel för P1 porten](https://www.homewizard.com/p1-meter/)
+* [https://energyintelligence.se/shop/ - IoT moduler och USB adaptrar](https://energyintelligence.se/shop/)
 ## Bygg själv
 
 * [https://amsleser.no/ - Färdiga moduler eller byggkit för HAN-porten](https://amsleser.no/) 
