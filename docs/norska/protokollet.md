@@ -1,7 +1,10 @@
 # Protokollet
 
-Protokollet som skickas på den norska HAN-porten är en DLMS/COSEM DataNotification APDU i en 
-HDLC unnumbered information frame
+Protokollet som skickas på den norska HAN-porten är formaterat enligt DLMS/COSEM men kan se olika ut beroende på elmätarens tillverkare. För mer information om en specifik typ av mätare rekommenderas det att gå igenom manualen för mätaren. Nedan listas manualerna från några vanliga tillverkare.
+
+ * [Aidon](https://aidon.com/wp-content/uploads/2023/07/AIDONFD_RJ45_HAN_Interface_SV.pdf?_gl=1*1pnav0t*_up*MQ..*_ga*NDE3NDMwMjcwLjE2OTQ2MDkxMzY.*_ga_7C4RC0STZL*MTY5NDYwOTEzNS4xLjAuMTY5NDYwOTEzNS4wLjAuMA..)
+ * [Kamstrup](https://documentation.kamstrup.com/docs/HAN_NVE/en-GB/Information_sheet/CONTAAA62C8B611D4C4EB3186FD81AEE0152/)
+ * [Kaifa](https://piers.rocks/static/files/S1001_Kaifa.HAN.OBIS.codes.KFM_001.pdf)
 
 !!! note "Ej verifierat"
     Vi har ingen mätare med denna typ av port och har inte verifierat om allt är helt korrekt.
@@ -10,14 +13,26 @@ HDLC unnumbered information frame
 ## Datainnehåll
 
 Datan är ett antal rader som liknar datan i den svenska standarden, men formaterad 
-mer enligt DLMS. Den innehåller en rad för tid och datum, en rad för identifiering av mätaren
+mer enligt DLMS. Exakt hur datan ser ut beror på elmätarens tillverkare.
+
+Elmätare från Aidon skickar data som innehåller en rad för tid och datum, en rad för identifiering av mätaren
 och flera rader som innehåller OBIS, värde, skalär och enhet.
+
+Elmätare från Kamstrup skickar data som innehåller en rad för identifiering av mätaren och sedan fortsätter
+listan med en OBIS-kod på varannan rad och tillhörande värde på nästa rad. Skalärer och enheter för varje 
+OBIS-kod förväntas den som läser datat känna till sedan innan. Det är därför viktigt att hänvisa till manualen 
+där detta finns dokumenterat.
+
+Elmätare fråm Kaifa skickar bara en fördefinierad lista med värden och räknar med att den som läser ska veta 
+vad värdena betyder och hur de ska tolkas. Man bör därför läsa manualen för att se vad värdena i listan betyder.
 
 ## Seriellt gränssnitt
 
-Data skickas med 2400 baud och i byteformat `8E1`
+Data skickas med 2400 baud och i byteformat `8N1` för de flesta elmätare (Aidon använder formatet `8E1`)
 
 ## Exempeldata
+
+Följande exempel visar hur data från en Aidon mätare kan komma att se ut:
 
 ```
 7e a10b 41 0883 13 fa7c e6e700
@@ -95,4 +110,7 @@ for item in result:
 ```
 ## Timing
 
-Det verkar vara lite olika med vilken data som skickas och hur ofta.
+Det är lite olika med vilken data som skickas och hur ofta. Vanligtvis har mätarna två eller 
+tre olika listor som skickas med olika intervaller. Exempelvis kan en kort lista skickas 
+var tionde sekund och en längre lista med ytterligare värden skickas varje timme. Detta finns
+i så fall dokumenterat i tillverkarens manual.

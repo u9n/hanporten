@@ -14,7 +14,8 @@ merga in dina ändringar till sidan.
 
 ## Köp
 
-* [https://amsleser.no/ - Färdiga moduler eller byggkit för HAN-porten](https://amsleser.no/) 
+* [https://amsleser.no/ - Färdiga moduler eller byggkit för HAN-porten](https://amsleser.no/)
+* [https://energyintelligence.se/shop/ - IoT moduler](https://energyintelligence.se/shop/)
 
 
 
