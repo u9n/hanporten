@@ -46,6 +46,8 @@ I Mälarenergis nät finns mätarna:
 
 ## Nacka Energi
 
+HAN-porten kan aktiveras genom att kontakta kundtjänst.
+
 I Nacka Energis nät finns mätarna:
 
 * [Kaifa MA304](matare.md#kaifa-ma304) (Med svensk HAN-port)
@@ -71,7 +73,7 @@ I Skånska Energis nät finns mätarna:
 
 Man aktiverar porten genom att beställa det via Tekniska verkens kundsidor: [https://www.tekniskaverken.se/mina-sidor/bestallaboka](https://www.tekniskaverken.se/mina-sidor/bestallaboka/)
 
-I Tekniska verkens när finns mätarna:
+I Tekniska verkens nät finns mätarna:
 
 * [Aidon 6534](matare.md#aidon-6534)
 * Aidon 6511
@@ -81,3 +83,11 @@ I Tekniska verkens när finns mätarna:
 !!! warning "OBS: Kontrollera din mätare"
     Tekniska verken rullade ut mätare tidigt och har en mix av norska (RJ45) och svenska (RJ12) standarden.
     Det finns också en version där det elektriska interfacet är svenskt (RJ12) men datan som skickas är enligt den norska standarden.
+
+## Vattenfall
+
+HAN-porten aktiveras genom `Mina Sidor`.
+
+I Vattenfalls när finns mätarna:
+
+* [SanXing S34U18](matare.md#sanxing-s34u18)
