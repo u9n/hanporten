@@ -1,0 +1,15 @@
+.banner-link {
+    color: white;
+}
+
+.banner-link a {
+    color: white;
+}
+
+.banner-link a:visited {
+    color: white;
+}
+
+.banner-link a:hover {
+    color: green;
+}

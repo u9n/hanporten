@@ -1,0 +1,1335 @@
+
+<!doctype html>
+<html lang="sv" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="En informationssida om det lokala kundgränssnitt som ska finnas på nya svenska elmätare. Kallas också HAN-porten, P1-porten eller H1-porten">
+      
+      
+        <meta name="author" content="Henrik Palmlund Wahlgren @ Utilitarian">
+      
+      
+      
+        <link rel="prev" href="../porten/">
+      
+      
+        <link rel="next" href="../kretsschema/">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
+    
+    
+      
+        <title>Protokollet - HANporten.se</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#protokollet" class="md-skip">
+          Gå till innehållet
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+<div class="banner-link">
+    Kolla in vårt nya gratis-API för att hämta elpriser: <a href="https://spot.utilitarian.io" class="btn" target="_blank"> <strong>spot.utilitarian.io</strong> </a>
+</div>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Sidhuvud">
+    <a href="../.." title="HANporten.se" class="md-header__button md-logo" aria-label="HANporten.se" data-md-component="logo">
+      
+  <img src="../../images/han-port-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HANporten.se
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Protokollet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Sök" placeholder="Sök" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Sök">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Rensa" aria-label="Rensa" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialiserar sök
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/u9n/hanporten" title="Gå till datakatalog" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    u9n/hanporten
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Flikar" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Hem
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../porten/" class="md-tabs__link">
+          
+  
+  Svenska porten (RJ12)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../norska/porten/" class="md-tabs__link">
+          
+  
+  Norska porten (RJ45)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../natbolag/" class="md-tabs__link">
+        
+  
+    
+  
+  Elnätsbolag
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../matare/" class="md-tabs__link">
+        
+  
+    
+  
+  Mätare
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="HANporten.se" class="md-nav__button md-logo" aria-label="HANporten.se" data-md-component="logo">
+      
+  <img src="../../images/han-port-white.svg" alt="logo">
+
+    </a>
+    HANporten.se
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/u9n/hanporten" title="Gå till datakatalog" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    u9n/hanporten
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Svenska porten (RJ12)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Svenska porten (RJ12)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../porten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Porten
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Protokollet
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Protokollet
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#seriellt-granssnitt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seriellt gränssnitt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meddelandestruktur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meddelandestruktur
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datarader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datarader
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Datarader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#obis" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBIS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varde-och-enhet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Värde och enhet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#svenska-branschrekommendationer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Svenska branschrekommendationer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kretsschema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kretsscheman
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../avvikelser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Avvikande implementationer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%C3%B6vriga-resurser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Övriga resurser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../l%C3%B6sningar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lösningar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Norska porten (RJ45)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Norska porten (RJ45)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../norska/porten/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Porten
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../norska/protokollet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protokollet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../norska/kretsschema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kretsscheman
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../norska/l%C3%B6sningar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lösningar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../natbolag/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elnätsbolag
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../matare/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mätare
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#seriellt-granssnitt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seriellt gränssnitt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meddelandestruktur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meddelandestruktur
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datarader" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datarader
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Datarader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#obis" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBIS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#varde-och-enhet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Värde och enhet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#svenska-branschrekommendationer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Svenska branschrekommendationer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="protokollet">Protokollet<a class="headerlink" href="#protokollet" title="Permanent link">#</a></h1>
+<p>Protokollet baseras på IEC62056-21 Mode D. Men några skillnader som anges nedan.
+Om du vill fördjupa dig i IEC62056-21 så kan du kolla in vårt 
+<a href="https://github.com/pwitab/iec62056-21">open source bibliotek</a> för 
+protokollet.</p>
+<h2 id="seriellt-granssnitt">Seriellt gränssnitt<a class="headerlink" href="#seriellt-granssnitt" title="Permanent link">#</a></h2>
+<p>Man läser av data via ett seriellt gränssnitt. Till skillnad på IEC62056-21 så skall
+teckenformatet vara <code>8N1</code> (8 databits, ingen paritet, en stop bit). Standard IEC62056-21 är 7E1</p>
+<p>Överföringshastigheten är satt fast till <code>115200 baud</code></p>
+<div class="admonition example">
+<p class="admonition-title">Kodexempel för seriell port</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Python</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">serial</span>
+
+<span class="n">serial_port</span> <span class="o">=</span> <span class="n">serial</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span>
+    <span class="s2">&quot;/dev/ttyUSB0&quot;</span><span class="p">,</span>  <span class="c1"># your serial port name</span>
+    <span class="n">baudrate</span><span class="o">=</span><span class="mi">115200</span><span class="p">,</span>
+    <span class="n">parity</span><span class="o">=</span><span class="n">serial</span><span class="o">.</span><span class="n">PARITY_NONE</span><span class="p">,</span>
+    <span class="n">stopbits</span><span class="o">=</span><span class="n">serial</span><span class="o">.</span><span class="n">STOPBITS_ONE</span><span class="p">,</span>
+    <span class="n">bytesize</span><span class="o">=</span><span class="n">serial</span><span class="o">.</span><span class="n">EIGHTBITS</span><span class="p">,</span>
+    <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span>
+    <span class="n">rtscts</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">dsrdtr</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">xonxoff</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">serial_port</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+
+<span class="o">...</span>
+
+<span class="c1"># do something</span>
+
+<span class="o">...</span>
+
+<span class="n">serial_port</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Node.js</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">SerialPort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;serialport&#39;</span><span class="p">)</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">baudRate</span><span class="o">:</span><span class="w"> </span><span class="mf">115200</span><span class="p">,</span><span class="w"> </span><span class="nx">dataBits</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="nx">stopBits</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">parity</span><span class="o">:</span><span class="w"> </span><span class="nx">none</span><span class="p">}</span>
+<span class="nx">cost</span><span class="w"> </span><span class="nx">serialPort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">SerialPort</span><span class="p">(</span><span class="s2">&quot;/dev/ttyUSB0&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">options</span><span class="p">)</span>
+<span class="nx">serialPort</span><span class="p">.</span><span class="nx">open</span><span class="p">()</span>
+<span class="p">...</span>
+<span class="c1">// do something</span>
+<span class="p">...</span>
+<span class="nx">serialPort</span><span class="p">.</span><span class="nx">close</span><span class="p">()</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="timing">Timing<a class="headerlink" href="#timing" title="Permanent link">#</a></h2>
+<p>När HAN-porten får +5V på <code>DATA REQUEST</code> börjar den skicka data på <code>DATA OUT</code>.</p>
+<p>Data skickas var 10:e sekund.</p>
+<p>Porten är enkelriktad så det är inte möjligt att skicka någon data till mätaren, 
+vilket gör det enkelt endast lyssna efter data.</p>
+<h2 id="meddelandestruktur">Meddelandestruktur<a class="headerlink" href="#meddelandestruktur" title="Permanent link">#</a></h2>
+<p>Den generella meddelandestrukturen för ett meddelande på HAN-porten är:</p>
+<p><code>/ XXXZ Ident CR LF CR LF Data ! CRC CR LF</code></p>
+<p>Varje del av meddelandet är separerat med <code>CR LF</code> dvs line-breaks. Så när man gör ett 
+program är det smidigt att använda en <code>readline</code> funktion som finns i de flesta 
+programspråk.</p>
+<ol>
+<li>
+<p>Första raden: <code>/ XXXZ Ident CR LF</code> innehåller information som identifierar mätaren. 
+   De första 3 bokstäverna är ett <a href="https://www.dlms.com/eng/flag-id-list-44143.shtml">FLAG ID</a> 
+   som visar vilken tillverkar det är. Z visar på vilken baudrate, men den behöver inte 
+   stämma eftersom HAN-porten kör på en fast baudrate. Ident är det unika ID:t på mätaren.</p>
+</li>
+<li>
+<p>Sedan kommer en tom rad som visar att datan börjar.</p>
+</li>
+<li>
+<p>Ett flertal datarader. Se mer under <a href="./#datarader">Datarader</a></p>
+</li>
+<li>
+<p>Sista raden som börjar med <code>!</code> som visar att data delen är slut och sedan 2 bytes CRC för meddelandet.
+   CRC:n (Cyclic Redundancy Check) används för att verifiera att man mottagit meddelandet på ett korrekt sätt.
+   Alla bytes från <code>/</code> till <code>!</code>  skall användas i beräkningen för CRC.</p>
+</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">CRC beräkning</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">libscrc</span>
+
+<span class="n">example_data</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="sa">b</span><span class="s2">&quot;/ELL5</span><span class="se">\x5c</span><span class="s2">253833635_A</span><span class="se">\r\n\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;0-0:1.0.0(210217184019W)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:1.8.0(00006678.394*kWh)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:2.8.0(00000000.000*kWh)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:3.8.0(00000021.988*kvarh)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:4.8.0(00001020.971*kvarh)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:1.7.0(0001.727*kW)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:2.7.0(0000.000*kW)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:3.7.0(0000.000*kvar)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:4.7.0(0000.309*kvar)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:21.7.0(0001.023*kW)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:41.7.0(0000.350*kW)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:61.7.0(0000.353*kW)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:22.7.0(0000.000*kW)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:42.7.0(0000.000*kW)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:62.7.0(0000.000*kW)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:23.7.0(0000.000*kvar)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:43.7.0(0000.000*kvar)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:63.7.0(0000.000*kvar)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:24.7.0(0000.009*kvar)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:44.7.0(0000.161*kvar)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:64.7.0(0000.138*kvar)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:32.7.0(240.3*V)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:52.7.0(240.1*V)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:72.7.0(241.3*V)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:31.7.0(004.2*A)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:51.7.0(001.6*A)</span><span class="se">\r\n</span><span class="s2">&quot;</span>
+    <span class="sa">b</span><span class="s2">&quot;1-0:71.7.0(001.7*A)</span><span class="se">\r\n</span><span class="s2">!&quot;</span>
+<span class="p">)</span>
+<span class="n">crc16</span> <span class="o">=</span> <span class="n">libscrc</span><span class="o">.</span><span class="n">ibm</span><span class="p">(</span><span class="n">example_data</span><span class="p">)</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;big&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span>
+<span class="o">&gt;&gt;</span> <span class="s1">&#39;7945&#39;</span>
+</code></pre></div>
+<h2 id="datarader">Datarader<a class="headerlink" href="#datarader" title="Permanent link">#</a></h2>
+<p>En datarad har formatet:</p>
+<p><code>OBIS ( Värde * Enhet ) CR LF</code></p>
+<h3 id="obis">OBIS<a class="headerlink" href="#obis" title="Permanent link">#</a></h3>
+<p>OBIS (OBject Identifier System) är en del av DLMS/COSEM och visar vilket värde dataraden gäller.</p>
+<p>Formatet är <code>A-B:C.D.E.F</code>       (ex: 1-0:1.8.0.255)</p>
+<p>Varje del kan vara mellan 0-255. Del <code>F</code> är nästan alltid 255 (används ej) och i den 
+svenska branchstandarden skickas det inte med.</p>
+<table>
+<thead>
+<tr>
+<th>Värdegrupp</th>
+<th>Beskrivning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Medíum, Ex: Elektricitet</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Kanal</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Mätvärde, Ex: Effekt Fas 1</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Mätvärdeshantering, Ex: Momentan, Kumulativ.</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Tariff, Ex: dag/natt</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Faktureringsperiod eller historisk data.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Exempel OBIS</p>
+<p>1-0:1.8.0.255 -&gt; El, Aktiv effekt förbrukning på alla faser, tidsintegral 1 (energi)</p>
+<p>Så det anger hur mycket energi som konsumerats genom mätaren. (Mätarställning)</p>
+</div>
+<h3 id="varde-och-enhet">Värde och enhet<a class="headerlink" href="#varde-och-enhet" title="Permanent link">#</a></h3>
+<p>Värde och enhet är avdelat med <code>*</code>. Vissa värden har ingen enhet (till exempel tid och datum)
+och då finns där inget * inom parenteserna.</p>
+<h2 id="svenska-branschrekommendationer">Svenska branschrekommendationer<a class="headerlink" href="#svenska-branschrekommendationer" title="Permanent link">#</a></h2>
+<p>Energiföretagen har tagit fram en 
+<a href="https://www.energiforetagen.se/forlag/elnat/branschrekommendation-for-lokalt-kundgranssnitt-for-elmatare/">branschrekommendation</a> 
+om hur HAN-porten borde fungera och vilken data som bör publiceras på HAN-porten.</p>
+<div class="admonition note">
+<p class="admonition-title">Lite förtydlingar</p>
+<p>Med uttag menas uttag från elnätet. Det vill säga det du förbrukar. Med inmating 
+  menas det du matar in i elnätet (till exampel om du har solceller)</p>
+<p>Den sista delen i OBIS har tagits bort då den inte tillför någon information.</p>
+<p>Tiden som visas är i svensk normaltid (UTC+1). Elmätare i Sverige ändrar inte om 
+  för sommartid. X anger om det är sommartid eller ej och kan ignoreras.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>OBIS</th>
+<th>Beskrivning</th>
+<th>Kommentar</th>
+<th>Exempel-värde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0-0.1.0.0</td>
+<td>Datum och tid</td>
+<td>Formatet <code>YYMMDDhhmmssX</code></td>
+<td>210217184019W</td>
+</tr>
+<tr>
+<td>1-0:1.8.0</td>
+<td>Mätarställning Aktiv Energi Uttag</td>
+<td></td>
+<td>00006678.394*kWh</td>
+</tr>
+<tr>
+<td>1-0:2.8.0</td>
+<td>Mätarställning Aktiv Energi Inmatning</td>
+<td></td>
+<td>00000000.000*kWh</td>
+</tr>
+<tr>
+<td>1-0:3.8.0</td>
+<td>Mätarställning Reaktiv Energi Uttag</td>
+<td></td>
+<td>00000021.988*kvarh</td>
+</tr>
+<tr>
+<td>1-0:4.8.0</td>
+<td>Mätarställning Reaktiv Energi Inmatning</td>
+<td></td>
+<td>00001020.971*kvarh</td>
+</tr>
+<tr>
+<td>1-0:1.7.0</td>
+<td>Aktiv Effekt Uttag</td>
+<td>Momentan trefaseffekt</td>
+<td>0001.727*kW</td>
+</tr>
+<tr>
+<td>1-0:2.7.0</td>
+<td>Aktiv Effekt Inmatning</td>
+<td>Momentan trefaseffekt</td>
+<td>0000.000*kW</td>
+</tr>
+<tr>
+<td>1-0:3.7.0</td>
+<td>Reaktiv Effekt Uttag</td>
+<td>Momentan trefaseffekt</td>
+<td>0000.000*kvar</td>
+</tr>
+<tr>
+<td>1-0:4.7.0</td>
+<td>Reaktiv Effekt Inmatning</td>
+<td>Momentan trefaseffekt</td>
+<td>0000.309*kvar</td>
+</tr>
+<tr>
+<td>1-0:21.7.0</td>
+<td>L1 Aktiv Effekt Uttag</td>
+<td>Momentan effekt</td>
+<td>0001.023*kW</td>
+</tr>
+<tr>
+<td>1-0:22.7.0</td>
+<td>L1 Aktiv Effekt Inmatning</td>
+<td>Momentan effekt</td>
+<td>0000.350*kW</td>
+</tr>
+<tr>
+<td>1-0:41.7.0</td>
+<td>L2 Aktiv Effekt Uttag</td>
+<td>Momentan effekt</td>
+<td>0000.353*kW</td>
+</tr>
+<tr>
+<td>1-0:42.7.0</td>
+<td>L2 Aktiv Effekt Inmatning</td>
+<td>Momentan effekt</td>
+<td>0000.000*kW</td>
+</tr>
+<tr>
+<td>1-0:61.7.0</td>
+<td>L3 Aktiv Effekt Uttag</td>
+<td>Momentan effekt</td>
+<td>0000.000*kW</td>
+</tr>
+<tr>
+<td>1-0:62.7.0</td>
+<td>L3 Aktiv Effekt Inmatning</td>
+<td>Momentan effekt</td>
+<td>0000.000*kW</td>
+</tr>
+<tr>
+<td>1-0:23.7.0</td>
+<td>L1 Reaktiv Effekt Uttag</td>
+<td>Momentan effekt</td>
+<td>0000.000*kvar</td>
+</tr>
+<tr>
+<td>1-0:24.7.0</td>
+<td>L1 Reaktiv Effekt Inmatning</td>
+<td>Momentan effekt</td>
+<td>0000.000*kvar</td>
+</tr>
+<tr>
+<td>1-0:43.7.0</td>
+<td>L2 Reaktiv Effekt Uttag</td>
+<td>Momentan effekt</td>
+<td>0000.000*kvar</td>
+</tr>
+<tr>
+<td>1-0:44.7.0</td>
+<td>L2 Reaktiv Effekt Inmatning</td>
+<td>Momentan effekt</td>
+<td>0000.009*kvar</td>
+</tr>
+<tr>
+<td>1-0:63.7.0</td>
+<td>L3 Reaktiv Effekt Uttag</td>
+<td>Momentan effekt</td>
+<td>0000.161*kvar</td>
+</tr>
+<tr>
+<td>1-0:64.7.0</td>
+<td>L3 Reaktiv Effekt Inmatning</td>
+<td>Momentan effekt</td>
+<td>0000.138*kvar</td>
+</tr>
+<tr>
+<td>1-0:32.7.0</td>
+<td>L1 Fasspänning</td>
+<td>Momentant RMS-värde</td>
+<td>240.3*V</td>
+</tr>
+<tr>
+<td>1-0:52.7.0</td>
+<td>L2 Fasspänning</td>
+<td>Momentant RMS-värde</td>
+<td>240.1*V</td>
+</tr>
+<tr>
+<td>1-0:72.7.0</td>
+<td>L3 Fasspänning</td>
+<td>Momentant RMS-värde</td>
+<td>241.3*V</td>
+</tr>
+<tr>
+<td>1-0:31.7.0</td>
+<td>L1 Fasström</td>
+<td>Momentant RMS-värde</td>
+<td>004.2*A</td>
+</tr>
+<tr>
+<td>1-0:51.7.0</td>
+<td>L2 Fasström</td>
+<td>Momentant RMS-värde</td>
+<td>001.6*A</td>
+</tr>
+<tr>
+<td>1-0:71.7.0</td>
+<td>L3 Fasström</td>
+<td>Momentant RMS-värde</td>
+<td>001.7*A</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="http://www.hanporten.se">hanporten.se</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.utilitarian.io">Utilitarian</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "header.autohide"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Kopierat till urklipp", "clipboard.copy": "Kopiera till urklipp", "search.result.more.one": "1 till p\u00e5 denna sida", "search.result.more.other": "# till p\u00e5 denna sida", "search.result.none": "Inga s\u00f6kresultat", "search.result.one": "1 s\u00f6kresultat", "search.result.other": "# s\u00f6kresultat", "search.result.placeholder": "Skriv s\u00f6kord", "search.result.term.missing": "Saknas", "select.version": "V\u00e4lj version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+    
+  </body>
+</html>
