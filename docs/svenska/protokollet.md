@@ -1,16 +1,15 @@
 # Protokollet
 
-Protokollet baseras på IEC62056-21 Mode D. Men några skillnader som anges nedan.
-Om du vill fördjupa dig i IEC62056-21 så kan du kolla in vårt 
-[open source bibliotek](https://github.com/pwitab/iec62056-21) för 
-protokollet.
+Protokollet baseras på IEC62056-21 Mode D. Vissa skillnader förekommer som du kan läsa mer om längre ned på sidan.
+Vill du fördjupa dig mer i protokollet - IEC62056-21, ta då gärna en titt in i vårt 
+[open source bibliotek](https://github.com/pwitab/iec62056-21).
 
 ## Seriellt gränssnitt
 
-Man läser av data via ett seriellt gränssnitt. Till skillnad på IEC62056-21 så skall
-teckenformatet vara `8N1` (8 databits, ingen paritet, en stop bit). Standard IEC62056-21 är 7E1
+Data läses av via ett seriellt gränssnitt. Till skillnad mot IEC62056-21 ska
+teckenformatet vara `8N1` (8 databits, ingen paritet samt en stop bit). Standard för IEC62056-21 är `7E1`
 
-Överföringshastigheten är satt fast till `115200 baud`
+Överföringshastigheten är fast till `115200 baud`
 
 !!! example "Kodexempel för seriell port"
 
@@ -55,35 +54,34 @@ teckenformatet vara `8N1` (8 databits, ingen paritet, en stop bit). Standard IEC
 
 ## Timing
 
-När HAN-porten får +5V på `DATA REQUEST` börjar den skicka data på `DATA OUT`.
+När HAN-porten får +5V på `DATA REQUEST` börjar porten skicka data på `DATA OUT`.
 
 Data skickas var 10:e sekund.
 
-Porten är enkelriktad så det är inte möjligt att skicka någon data till mätaren, 
-vilket gör det enkelt endast lyssna efter data.
+Porten är enkelriktad som innebär att det endast går att **läsa** data från elmätaren.
 
 ## Meddelandestruktur
 
-Den generella meddelandestrukturen för ett meddelande på HAN-porten är:
+Den generella meddelandestrukturen är enligt följande format:
 
 `/ XXXZ Ident CR LF CR LF Data ! CRC CR LF`
 
-Varje del av meddelandet är separerat med `CR LF` dvs line-breaks. Så när man gör ett 
-program är det smidigt att använda en `readline` funktion som finns i de flesta 
-programspråk.
+Varje del av meddelandet är separerad med `CR LF` d.v.s. line-break. När du utvecklar
+program för att läsa av data, är det smidigt att använda en `readline`-funktion.
+Denna funktion finns i de flesta programeringsspråk.
 
 1. Första raden: `/ XXXZ Ident CR LF` innehåller information som identifierar mätaren. 
    De första 3 bokstäverna är ett [FLAG ID](https://www.dlms.com/eng/flag-id-list-44143.shtml) 
-   som visar vilken tillverkar det är. Z visar på vilken baudrate, men den behöver inte 
+   som visar vilken tillverkar det är. Z visar baudrate, men den behöver inte 
    stämma eftersom HAN-porten kör på en fast baudrate. Ident är det unika ID:t på mätaren.
    
-2. Sedan kommer en tom rad som visar att datan börjar.
+2. Efter kommer en tom rad som visar att datan börjar.
 
 3. Ett flertal datarader. Se mer under [Datarader](protokollet.md#datarader)
 
 4. Sista raden som börjar med `!` som visar att data delen är slut och sedan 2 bytes CRC för meddelandet.
    CRC:n (Cyclic Redundancy Check) används för att verifiera att man mottagit meddelandet på ett korrekt sätt.
-   Alla bytes från `/` till `!`  skall användas i beräkningen för CRC.
+   Alla bytes från `/` till `!`  ska användas i beräkningen för CRC.
    
 
 !!! example "CRC beräkning"
