@@ -2,12 +2,12 @@
 
 Här samlar vi information om kretsar för att få ut signalen korrekt från HAN-porten.
 
-För att koppla in datasignalen enkelt i, till exempel, en Arduino eller Raspberry Pi
-behöves signalen inverteras. 
+För att koppla in datasignalen enkelt i till exempel en Arduino eller Raspberry Pi
+behövs signalen inverteras.
 
-Nedan är en enkel inverter-krets baserat på en PNP-transistor
+Nedan är en enkel inverter-krets baserat på en PNP-transistor.
 
-![PNP inverter krets](../images/p1_pnp_inverter_schematic.png)
+![PNP inverterkrets](../images/p1_pnp_inverter_schematic.png)
 
 !!! note "OBS!"
     Denna krets är inget vi rekommenderar i en produkt, men duger bra om man vill 
@@ -17,5 +17,5 @@ Nedan är en enkel inverter-krets baserat på en PNP-transistor
     protokollimplementationen om det behövs.
     
     Om det finns någon med bättre hårdvarukunskaper än oss som vill dela med sig av en 
-    bättre design lägger vi gärna upp det på denna sidan. Helst under en Open Hardware 
-    licens. 
+    bättre design lägger vi gärna upp det på denna sida. Helst under en Open
+    Hardware-licens.

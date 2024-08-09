@@ -28,7 +28,7 @@ Energiföretagen Sverige har tagit fram en [branschrekommendation](https://www.e
 för hur HAN-porten på svenska elmätare bör utformas. Men vissa nätbolag rullade ut nya
 mätare med HAN-port innan dessa rekommendationer var fullt på plats. Därför finns det 
 även elmätare med den [norska](norska/porten.md) varianten av HAN-port. Skillnaden är att den norska är 
-en RJ45 kontakt (vanlig internetsladd) och den [svenska](svenska/porten.md) är en RJ12 kontakt.
+en RJ45-kontakt (vanlig internetsladd) och den [svenska](svenska/porten.md) är en RJ12-kontakt.
 
 ## Om HANporten.se
 

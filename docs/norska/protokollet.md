@@ -1,11 +1,11 @@
 # Protokollet
 
-Protokollet som skickas på den norska HAN-porten är en DLMS/COSEM DataNotification APDU i en 
-HDLC unnumbered information frame
+Datan som skickas på den norska HAN-porten är en DLMS/COSEM DataNotification APDU i en 
+HDLC unnumbered information frame.
 
 !!! note "Ej verifierat"
     Vi har ingen mätare med denna typ av port och har inte verifierat om allt är helt korrekt.
-    Men om någon har en mätare med denna port får de gärna verifiera och meddela oss.
+    Om någon har en mätare med denna port får de gärna verifiera och meddela oss.
 
 ## Datainnehåll
 
@@ -15,7 +15,7 @@ och flera rader som innehåller OBIS, värde, skalär och enhet.
 
 ## Seriellt gränssnitt
 
-Data skickas med 2400 baud och i byteformat `8E1`
+Data skickas med 2400 baud och i byteformat `8E1`.
 
 ## Exempeldata
 
@@ -40,10 +40,10 @@ Data skickas med 2400 baud och i byteformat `8E1`
 ```
 ## Läs ut datan
 
-HDLC frames är inramade av ascii tilde `~`/`0x7e`. 
+HDLC frames är inramade av ASCII-tilde (`~`/`0x7e`).
 
 Ett enkelt program som läser av ett seriellt gränssnitt kan läsa tills det hittar en 
-frame-end och testa att parsa inläst data som en hdlc-frame. Om det inte går att parsa 
+frame-end och testa att parsa inläst data som en HDLC-frame. Om det inte går att parsa 
 fortsätter man läsa tills nästa frame-end.
 
 ## Parsa data

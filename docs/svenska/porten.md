@@ -1,8 +1,8 @@
 # Svenska porten
 
 HAN-porten, eller P1-porten, sitter oftast under ett litet lock på din elmätare. Den 
-består av ett RJ12 uttag. Den svenska porten är baserad på
-[DSMR P1 Companion Standard](https://www.netbeheernederland.nl/_upload/Files/Slimme_meter_15_a727fce1f1.pdf)
+består av ett RJ12-uttag. Den svenska porten är baserad på
+[DSMR P1 Companion Standard](https://www.netbeheernederland.nl/_upload/Files/Slimme_meter_15_a727fce1f1.pdf).
 
 ## Spänningsmatning av utrustning
 
@@ -12,7 +12,7 @@ Det är möjligt att spänningsmata din utrustning direkt från HAN-porten. Den 
 
 !!! note "Hör med ditt nätbolag"
     Enligt rekommendationerna är det inte ett krav att leverera en HAN-port med 
-    spänningsmatning från mätarna. Så det är möjligt att den mätare ditt elbolag köpt 
+    spänningsmatning från mätarna, så det är möjligt att den mätare ditt elbolag köpt 
     in inte kan spänningsmata utrustningen. Men de största bolagen levererar port med 
     spänningsmatning. 
 
@@ -31,13 +31,6 @@ Pin | Namn | Beskrivning | Kommentar
 
 ## Koppla in extra utrustning
 
-Om du behöver mer än en enhet kan du använda en hub som delar datasignalen till flera 
-HAN-portar. Men detta kan kräva att man måste spänningsmata utrustningen separat då det 
+Om du behöver mer än en enhet kan du använda en hubb som delar datasignalen till flera 
+HAN-portar. Detta kan kräva att man måste spänningsmata utrustningen separat då det 
 inte är säkert att HAN-porten kan driva flera enheter.
-
-
-
-
-
-
-

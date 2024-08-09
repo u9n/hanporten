@@ -1,10 +1,10 @@
 # Lösningar
 
 Här samlar vi länkar till olika lösningar som finns att köpa eller bygga själv
-för utläsning av den norska HAN-porten. 
+för utläsning från den norska HAN-porten. 
 
-Om du har en länk du vill få med på denna sidan, forka repot på Github, gör en ny 
-branch på din fork där du lägger till länken och öppna sedan ett pull-requeset för att 
+Om du har en länk du vill få med på denna sida, forka repot på Github, gör en ny 
+branch på din fork där du lägger till länken och öppna sedan en pull-requeset för att 
 merga in dina ändringar till sidan.
 
 !!! note "OBS!"

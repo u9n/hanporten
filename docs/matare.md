@@ -5,7 +5,7 @@ hide:
 
 # Mätare
 
-En samling av de mätare som används i Sverige och vart HAN-porten sitter på dem.
+En samling av de mätare som används i Sverige och var HAN-porten sitter på dem.
 
 ## Aidon 6534 
 

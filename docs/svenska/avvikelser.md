@@ -1,7 +1,7 @@
 # Avvikande implementationer
 
 En lista på de olika, från branschrekommendationer, avvikande implementationer som har 
-återfunnits i Sverige på en RJ12 port.
+återfunnits i Sverige på en RJ12-port.
 
 ## HDLC + DLMS Push.
 

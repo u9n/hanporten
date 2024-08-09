@@ -10,7 +10,7 @@ Information om hur man aktiverar HAN-porten hos olika elnätsbolag.
 ## E.ON
 
 Det är möjligt att aktivera porten via `Minas Sidor` eller via E.ONs app. Hittas under `Mina Avtal`. 
-I E.ONs nät finns mätarna:
+I E.ON:s nät finns mätarna:
 
 * [Landis & Gyr E360](matare.md#landis--gyr-e360)
 * [Iskra AM550](matare.md#iskra-am550)  (E.ON aktiverar inte HAN-porten på denna mätartyp)
@@ -31,14 +31,14 @@ I Ellevios nät finns mätarna:
 
 Man aktiverar porten genom att fylla i ett webbformulär här: [https://www.eem.se/privat/elnat/elmatare/han-porten/](http://www.eem.se/privat/elnat/elmatare/han-porten/)
 
-I Eskilstuna Energi och Miljö elnät finns mätarna:
+I Eskilstuna Energi och Miljös elnät finns mätarna:
 
 * [Aidon 6534](matare.md#aidon-6534) 
 
 ## Mälarenergi
 
 I dagsläget har Mälarenergi ingen självbetjäning för aktivering av HAN-porten.
-För att aktivera HAN-porten måste du ta kontakt med deras [kundtjänst](https://www.malarenergi.se/kundcenter-privat/)
+För att aktivera HAN-porten måste du ta kontakt med deras [kundtjänst](https://www.malarenergi.se/kundcenter-privat/).
 
 I Mälarenergis nät finns mätarna:
 
@@ -50,14 +50,14 @@ HAN-porten kan aktiveras genom att kontakta kundtjänst.
 
 I Nacka Energis nät finns mätarna:
 
-* [Kaifa MA304](matare.md#kaifa-ma304) (Med svensk HAN-port)
+* [Kaifa MA304](matare.md#kaifa-ma304) (med svensk HAN-port)
 
 
 ## SEVAB Strängnäs Energi
 
 Man aktiverar porten genom att fylla i ett webbformulär här: [https://www.sevab.com/privat/elnat/elmatare/han-porten/](https://www.sevab.com/privat/elnat/elmatare/han-porten/)
 
-I SEVABs elnät finns mätarna:
+I SEVAB:s elnät finns mätarna:
 
 * [Aidon 6534](matare.md#aidon-6534) 
 
