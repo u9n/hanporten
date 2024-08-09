@@ -28,10 +28,12 @@ HAN-porten sitter under en gummilucka till vänster på mätarens framsida. Det 
 
 ## Landis & Gyr E360
 
+Det finns flera modeller och versioner av Landis & Gyr E360. Dels finns det en enfasmodell och en trefasmodell. Trefasmodellen finns i åtminstone två versioner med olika placering av HAN-porten. Åtminstone [E.ON använder två versioner som de kallar 1.0 och 2.0](https://www.eon.se/el/elnat/sa-fungerar-din-smarta-elmatare).
+
 ![Landis & Gyr E360 front](images/LG_E360_1.png)
 ![Landis & Gyr E360 HANport](images/LG_E360_2.png)
 
-HAN-porten på Landis & Gyr E360 sitter under luckan.
+Om det finns en lucka till vänster som på bilderna ovan så sitter HAN-porten under den, skyddad av en bit gummi som går att dra ut. Saknas lucka så finns HAN-porten på undersidan av mätarens tjockaste del, skyddad av en plastlucka som går att skjuta i djupled för att komma åt porten.
 
 ## Sagemcom S211
 
